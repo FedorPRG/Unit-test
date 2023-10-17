@@ -69,5 +69,4 @@ void testCarHaveFourWheels(){
         motorcycle.park();
         assertEquals(motorcycle.getSpeed(),0);
     }
-
 }
