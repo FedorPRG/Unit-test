@@ -8,7 +8,11 @@ class Test:
         hw = HW()
         assert hw.avg([1, 2, 3]) == 2
 
-    def test_raise_avg(self):
+    def test_raise_item_is_not_number_avg(self):
+        hw = HW()
+        with pytest.raises(TypeError): hw.avg(['a', 2, 3])
+
+    def test_raise_argument_is_not_list_avg(self):
         hw = HW()
         with pytest.raises(TypeError): hw.avg('a')
 
